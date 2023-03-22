@@ -30,12 +30,14 @@
             justify-content: space-around;
         }    
         .d1{
-            
-            background-image: url(FLOPPY\ ARCH\ \(1\).png);
-            background-position: 150px 10px;
+          
             width: 100%;
-            height: 20%;
-          }  
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+          
+          }
           .d2{
             width: 100%;
             height: 70%;
@@ -52,7 +54,28 @@
             background-position: 50% 50%;
             width: 22%;
             height: 72%;
+            }
+            fieldset {
+            color: yellow;
+            width: 100%;
+            height: 85%;
+            font-size: 40px;
             } 
+            .d22{
+              width: 22%;
+              height: 72%;
+            }
+            botao
+            {
+            width: 65px;
+            height: 45px;
+            background-color: lightgrey;
+            font-size: 16px;
+            cursor: url("cursor.png");
+            }
+            botao:hover{
+            background-color: greenyellow;
+            }
         .d24{
             background-image: url(disquete.gif);
             background-position: 50% 50%;
@@ -143,11 +166,26 @@
 <body>
     <div class="d0">
         <div class="d1">
+          <img src="FLOPPY_ARCH.png" width="200%" height="1000%">
+
         
         </div>
         <div class="d2">
+          
             <div class="d21"></div>
-            <div class="d22"></div>
+            <div class="d22">
+              <fieldset>
+                <legend>CRIAR CONTA</legend>
+                Nome:<input type="text" class="caixa_larga" id="nome" >
+                <br> <br>
+                Senha:<input type="password" class="caixa_larga" id="senha">
+                <br> <br>
+                Confirmar Senha:<input type="password" class="caixa_larga" id="senha">
+                <br> <br>
+                <button class="botao">Confirmar</button>
+               
+              </fieldset>
+            </div>
             <div class="d23"></div>
             <div class="d24"></div>
         </div>
@@ -179,6 +217,7 @@
         </div>
     </div>
     </div>
+  
 
 
 
